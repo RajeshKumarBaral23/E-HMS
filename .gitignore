@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+backend/target/
+.env
+.env.local
+
+# Build outputs
+backend/compile_output.txt
+frontend/build_output.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+tmp_test_write.txt
+console.error*
+console.log*

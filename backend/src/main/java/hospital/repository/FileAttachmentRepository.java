@@ -1,0 +1,9 @@
+package hospital.repository;
+
+import hospital.entity.FileAttachment;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+public interface FileAttachmentRepository extends JpaRepository<FileAttachment, Long> {
+    List<FileAttachment> findByRelatedTypeAndRelatedId(String relatedType, Long relatedId);
+}
